@@ -1,1 +1,61 @@
-/* CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.scroll-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  cursor: grab;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(60, 100px); /* 60 columns of 100px, change as needed */
+  grid-template-rows: repeat(30, 100px);    /* 30 rows of 100px */
+  gap: 2px;
+  position: absolute;
+  animation: scroll-diagonal 10000s linear infinite; /* Infinite scroll animation */
+}
+
+.grid img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Slight variation in size for some images */
+.grid img:nth-child(3n) {
+  width: 200px;
+  height: 200px;
+}
+
+.grid img:nth-child(5n) {
+  width: 300px;
+  height: 300px;
+}
+
+/* Infinite diagonal scrolling */
+@keyframes scroll-diagonal {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-200%, -200%);
+  }
+}
+
+/* Draggable Scrolling */
+.scroll-container:active {
+  cursor: grabbing;
+}
