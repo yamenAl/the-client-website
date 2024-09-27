@@ -8,6 +8,7 @@ let scrollLeft, scrollTop;
 // Function to duplicate the images for infinite effect
 function duplicateImages() {
   const images = document.querySelectorAll('.grid img');
+  if (images.length === 0) return; // Prevent duplication if no images exist
   images.forEach(image => {
     const clone = image.cloneNode(true);
     grid.appendChild(clone);
@@ -56,7 +57,7 @@ scrollContainer.addEventListener('touchstart', (e) => {
   startY = touch.pageY - scrollContainer.offsetTop;
   scrollLeft = scrollContainer.scrollLeft;
   scrollTop = scrollContainer.scrollTop;
-});
+}, { passive: true }); // Improves performance for touch events
 
 scrollContainer.addEventListener('touchend', () => {
   isDragging = false;
@@ -71,4 +72,4 @@ scrollContainer.addEventListener('touchmove', (e) => {
   const walkY = (y - startY) * 2;
   scrollContainer.scrollLeft = scrollLeft - walkX;
   scrollContainer.scrollTop = scrollTop - walkY;
-});
+}, { passive: true });
