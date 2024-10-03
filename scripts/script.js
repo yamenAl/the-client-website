@@ -73,3 +73,15 @@ scrollContainer.addEventListener('touchmove', (e) => {
   scrollContainer.scrollLeft = scrollLeft - walkX;
   scrollContainer.scrollTop = scrollTop - walkY;
 }, { passive: true });
+// header
+function myFunction() {
+  const navLinks = document.querySelector('.nav-links');
+  const rightNav = document.querySelector('.right-nav');
+  if (navLinks.style.display === "flex") {
+    navLinks.style.display = "none";
+    rightNav.style.display = "none";
+  } else {
+    navLinks.style.display = "flex";
+    rightNav.style.display = "flex";
+  }
+}

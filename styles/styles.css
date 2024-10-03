@@ -24,7 +24,7 @@ html, body {
   grid-template-rows: repeat(30, 100px);    /* 30 rows of 100px */
   gap: 2px;
   position: absolute;
-  animation: scroll-diagonal 10000s linear infinite; /* Infinite scroll animation */
+  animation: scroll-diagonal 100000s linear infinite; /* Infinite scroll animation */
 }
 
 .grid img {
@@ -34,7 +34,6 @@ html, body {
   transition: transform 0.3s ease;
 }
 
-/* Slight variation in size for some images */
 .grid img:nth-child(3n) {
   width: 200px;
   height: 200px;
@@ -45,7 +44,6 @@ html, body {
   height: 300px;
 }
 
-/* Infinite diagonal scrolling */
 @keyframes scroll-diagonal {
   0% {
     transform: translate(0, 0);
@@ -55,7 +53,163 @@ html, body {
   }
 }
 
-/* Draggable Scrolling */
 .scroll-container:active {
   cursor: grabbing;
+}
+
+/* Header styling */
+header {
+  background-color: #fff;
+  max-height: 70px;
+  padding: 10px 20px;
+  border-bottom: 2px solid #ccc;
+}
+
+.logo {
+  float: left;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.nav-links a.highlight {
+  background-color: yellow;
+  padding: 14px 25px;
+  font-size: 16px;
+  border: 2px solid black;
+}
+
+.right-nav {
+  display: flex;
+  gap: 15px;
+}
+
+.right-nav a {
+  text-decoration: none;
+  color: black; /* Ensure all links start with black */
+}
+
+.right-nav a:link,
+.right-nav a:visited {
+  color: black; /* Black for both unvisited and visited links */
+}
+
+.right-nav a:hover,
+.right-nav a:active {
+  color: black; /* Keep black on hover and active */
+}
+
+.right-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Dropdown Menu Styling */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  overflow: hidden;
+  max-height: 90vh; /* Ensure dropdown doesn't exceed screen height */
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  left: 0;
+  right: auto;
+}
+
+.dropdown-content {
+  right: 0;
+  left: auto;
+  overflow-y: auto;
+}
+
+.dropdown:hover .dropdown-content {
+  right: 0; 
+  left: unset;
+}
+
+/* Footer styling */
+footer {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-top: 2px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-filters {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-filters a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.footer-filters a:hover {
+  background-color: #ffea00;
+}
+
+.footer-search {
+  display: flex;
+  align-items: center;
+}
+
+.footer-search input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.footer-search button {
+  padding: 10px;
+  background-color: #ffea00;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
 }
