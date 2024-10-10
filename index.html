@@ -29,27 +29,27 @@
     </header>
     <main>
       <ul class="photo-list">
-        <li><img  class="img-1" src="../assets/photos/qatar-mus-2.jpg" alt=""></li>
+        <li><img  class="img-1" id="div1"   src="../assets/photos/qatar-mus-2.jpg" alt="All Objects"></li>
         
-        <li><img class="img-2"src="../assets/photos/qatar-mus-1.jpg" alt=""></li>
+        <li><img class="img-2"id="div3" src="../assets/photos/qatar-mus-1.jpg" alt="Pottery"></li>
         
-        <li><img class="img-3" src="../assets/photos/qatar-mus-3.jpg" alt=""></li>
+        <li><img class="img-3" id="div2" src="../assets/photos/qatar-mus-3.jpg" alt="All Objects"></li>
         
-        <li><img class="img-2" src="../assets/photos/qatar-mus-4.jpg" alt=""></li>
+        <li><img class="img-2" id="div4" src="../assets/photos/qatar-mus-4.jpg" alt="Pottery"></li>
         
-        <li><img class="img-1" src="../assets/photos/qatar-mus-1.jpg" alt=""></li>
+        <li><img class="img-1" id="div5" src="../assets/photos/qatar-mus-1.jpg" alt="Islamic Art"></li>
         
-        <li><img class="img-2" src="../assets/photos/qatar-mus-5.jpg" alt=""></li>
+        <li><img class="img-2" id="div7" src="../assets/photos/qatar-mus-5.jpg" alt="Tapestry"></li>
         
-        <li><img class="img-3" src="../assets/photos/qatar-mus-3.jpg" alt=""></li>
+        <li><img class="img-3" id="div6"src="../assets/photos/qatar-mus-3.jpg" alt="Islamic Art"></li>
         
-        <li><img class="img-2" src="../assets/photos/qatar-mus-2.jpg" alt=""></li>
+        <li><img class="img-2" id="div8"src="../assets/photos/qatar-mus-2.jpg" alt="Tapestry"></li>
         
-        <li><img class="img-1" src="../assets/photos/qatar-mus-6.jpg" alt=""></li>
+        <li><img class="img-1" id="div9" src="../assets/photos/qatar-mus-6.jpg" alt="Glass"></li>
         
         <li><img class="img-2" src="../assets/photos/qatar-mus-5.jpg" alt=""></li>     
         
-        <li><img class="img-2" src="../assets/photos/qatar-mus-2.jpg" alt=""></li>
+        <li><img class="img-2" id="div10" src="../assets/photos/qatar-mus-2.jpg" alt="Glass"></li>
         
         <li><img class="img-1" src="../assets/photos/qatar-mus-1.jpg" alt=""></li>
         
@@ -145,11 +145,11 @@
     </main>
     <footer class="footer">
       <div class="footer-filters">
-        <a class="footer-item" href="#">All Objects</a>
-        <a class="footer-item" href="#">Pottery</a>
-        <a class="footer-item" href="#">Islamic Art</a>
-        <a class="footer-item" href="#">Tapestry</a>
-        <a class="footer-item" href="#">Glass</a>
+        <button class="footer-item" onclick="toggleVisibility('div1', 'div2')">All Objects</button>
+        <button class="footer-item" onclick="toggleVisibility('div3', 'div4')">Pottery</button>
+        <button class="footer-item" onclick="toggleVisibility('div5', 'div6')">Islamic Art</button>
+        <button class="footer-item" onclick="toggleVisibility('div7', 'div8')">Tapestry</button>
+        <button class="footer-item" onclick="toggleVisibility('div9', 'div10')">Glass</button>
       </div>
       <div class="footer-search">
         <input type="text" placeholder="Search the collection" name="search">
