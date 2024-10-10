@@ -64,7 +64,8 @@ Een belangrijk aspect van de website is de Arabische versie, die eenvoudig toega
 Dit verhoogt de toegankelijkheid en biedt een betere gebruikerservaring voor Arabischsprekende bezoekers.
 
 ## Bronnen
-grid  (https://www.youtube.com/watch?v=rg7Fvvl3taU)
+Grid https://www.youtube.com/watch?v=rg7Fvvl3taU
+
 Viewport meta tag https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag
 
 Media query @Media width https://developer.mozilla.org/en-US/docs/Web/CSS/@media/width
@@ -72,7 +73,6 @@ Media query @Media width https://developer.mozilla.org/en-US/docs/Web/CSS/@media
 foto list https://codepen.io/Arman-Voogd/pen/XWvXPbj
 
 Ik gebruik ChatGPT om me te helpen met nadenken en manieren te vinden om problemen op te lossen.
-
 
 ## Licentie
 
