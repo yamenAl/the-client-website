@@ -25,7 +25,7 @@ De website is volledig responsief, wat betekent dat de indeling zich automatisch
 
 
 <!--link naar Github Pages 🌐-->
-https://github.com/yamenAl/the-client-website.git
+[https://github.com/yamenAl/the-client-website.git](https://yamenal.github.io/the-client-website/)
 
 ## Gebruik
 De website is simpel in gebruik.
