@@ -25,9 +25,7 @@ header{
 main {
   width: 100%;
   min-height: 90vh;
-
 	position:relative;
-	background-color:pink;
 	overflow:auto;
   grid-row: 2;
   grid-column: span 2;
